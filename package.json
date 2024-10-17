@@ -5,22 +5,23 @@
   "main": "index.js",
   "homepage": "https://AaqibhafeezKhan.github.io/cms-root-orchestration",
   "scripts": {
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist",
-      "start": "webpack serve --mode development",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "start": "webpack serve --mode development",
     "build": "webpack --mode production"
-  }
-  "scripts": {
   },
   "dependencies": {
     "single-spa": "^5.9.3",
     "single-spa-layout": "^1.0.0"
   },
   "devDependencies": {
-    "babel-loader": "^8.2.2",
+    "@babel/core": "^7.25.8",
+    "@babel/preset-env": "^7.25.8",
+    "babel-loader": "^8.4.1",
+    "gh-pages": "^6.2.0",
+    "html-webpack-plugin": "^5.3.1",
     "webpack": "^5.24.3",
     "webpack-cli": "^4.5.0",
-    "webpack-dev-server": "^3.11.2",
-    "html-webpack-plugin": "^5.3.1"
+    "webpack-dev-server": "^3.11.2"
   }
 }
