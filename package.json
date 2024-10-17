@@ -1,0 +1,21 @@
+{
+  "name": "cms-root-orchestration",
+  "version": "1.0.0",
+  "description": "Orchestration layer for microfrontends in CMS using Single-SPA",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production"
+  },
+  "dependencies": {
+    "single-spa": "^5.9.3",
+    "single-spa-layout": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.24.3",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2",
+    "html-webpack-plugin": "^5.3.1"
+  }
+}
