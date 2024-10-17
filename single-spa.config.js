@@ -1,27 +1,28 @@
 import { registerApplication, start } from 'single-spa';
 
-registerApplication({
-  name: '@cms-react-editorial',
-  app: () => System.import('cms-react-editorial'),
-  activeWhen: ['/editorial'],
-});
+registerApplication(
+  'react-editorial',
+  () => System.import('https://AaqibhafeezKhan.github.io/cms-react-editorial/main.js'),
+  pathPrefix('/editorial')
+);
 
-registerApplication({
-  name: '@cms-vue-media',
-  app: () => System.import('cms-vue-media'),
-  activeWhen: ['/media-library'],
-});
+registerApplication(
+  'vue-media',
+  () => System.import('https://AaqibhafeezKhan.github.io/cms-vue-media/main.js'),
+  pathPrefix('/media-library')
+);
 
-registerApplication({
-  name: '@cms-angular-auth',
-  app: () => System.import('cms-angular-auth'),
-  activeWhen: ['/role-access'],
-});
+registerApplication(
+  'angular-auth',
+  () => System.import('https://AaqibhafeezKhan.github.io/cms-angular-auth/main.js'),
+  pathPrefix('/auth')
+);
 
-registerApplication({
-  name: '@cms-svelte-collab',
-  app: () => System.import('cms-svelte-collab'),
-  activeWhen: ['/real-time-editor'],
-});
+registerApplication(
+  'svelte-collab',
+  () => System.import('https://AaqibhafeezKhan.github.io/cms-svelte-collab/main.js'),
+  pathPrefix('/collab')
+);
+
 
 start();
