@@ -3,9 +3,14 @@
   "version": "1.0.0",
   "description": "Orchestration layer for microfrontends in CMS using Single-SPA",
   "main": "index.js",
+  "homepage": "https://AaqibhafeezKhan.github.io/cms-root-orchestration",
   "scripts": {
-    "start": "webpack serve --mode development",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist",
+      "start": "webpack serve --mode development",
     "build": "webpack --mode production"
+  }
+  "scripts": {
   },
   "dependencies": {
     "single-spa": "^5.9.3",
